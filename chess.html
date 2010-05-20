@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <title>Chess</title>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="raphael-min.js"></script>
+    <script type="text/javascript" src="board.js"></script>
+    <style type="text/css">
+      body { background-color: #CCCCEF; }
+      #content { float: center;}
+    </style>
+    <script type="text/javascript">
+     $(document).ready(function() {
+      var paper = Raphael(document.getElementById("content"), 600, 600);
+      createBoard(paper);
+     });
+    </script>
+  </head>
+  <body>
+    <div id="content">
+    </div>
+  </body>
+</html>
